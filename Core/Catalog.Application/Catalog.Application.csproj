@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="MassTransit" Version="9.2.4" />
+    <PackageReference Include="MassTransit.Abstractions" Version="9.2.4" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="9.2.4" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog.Domain\Catalog.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Product\Category\Commands\Handlers\" />
+    <Folder Include="Features\Product\Category\Commands\Requests\" />
+    <Folder Include="Features\Product\Category\Queries\Handlers\" />
+    <Folder Include="Features\Product\Category\Queries\Requests\" />
+    <Folder Include="Features\Product\Products\Queries\Handlers\" />
+    <Folder Include="Features\Product\Products\Queries\Requests\" />
+  </ItemGroup>
+
+</Project>

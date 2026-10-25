@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Core/Catalog.Application/Catalog.Application.csproj" />
+    <Project Path="Core/Catalog.Domain/Catalog.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+    <Project Path="Infrastructure/Catalog.Persistance/Catalog.Persistance.csproj" Id="06a73fe7-9ba5-4ad6-8c1d-eb1546d957eb" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/Catalog.API/Catalog.API.csproj" />
+  </Folder>
+</Solution>
